@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cal-con">
+            <div class="left-con">
+                <div class="left">
+                    <div class="mort">
+                        <div class="title"> Mortgage Calculator</div>
+                        <button>Clear All</button>
+                    </div>
+                    <form action="#" form>
+                        <div class="amount">
+                        <label>  Mortgage Amount</label>
+                        <div class="input">
+                            <input type="number" required>
+                            <div class="f">F</div>
+                        </div>
+                        <p class="error">This field is required</p>
+                    </div>
+                    <div class="term-con">
+                        <div class="term">
+                            <label> Mortgage Term</label>
+                            <div>
+                                <input type="number" required>
+                                <div class="year">years</div>
+                            </div>
+                        </div>
+    
+                        <div class="term">
+                            <label>  Interest Rate</label>
+                            <div>
+                                <input type="number" required>
+                                <div class="year">%</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="radio-container">
+                        <label> Mortgage Type</label>
+                        <div class="radio ment">
+                            <input type="radio" id="repay" name="radio">
+                            <label for="repay"> Repayment</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="btn" name="radio">
+                            <label for="btn">Interest Only</label>
+                        </div>
+                    </div>
+                    <div class="pay-btn">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#133041" d="M18.75 2.25H5.25a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V3.75a1.5 1.5 0 0 0-1.5-1.5Zm-10.5 16.5a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 18.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 15a1.125 1.125 0 1 1 0-2.25A1.125 1.125 0 0 1 12 15Zm3.75 3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm1.5-5.25a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75V6a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 .75.75v3.75Z"/></svg>
+                            Calculate Repayments</button>
+                    </div></form>
+                    
+                </div>
+               
+            </div>
+            <div class="right-con">
+                <div class="right">
+                    <div class="title">  Your results</div>
+                    <p class="your">Your results are shown below based on the information you provided. 
+                    To adjust the results, edit the form and click “calculate repayments” again.</p>
+                    <div class="small-box">
+                        <p> Your monthly repayments</p>
+                        <h1>F1,797.74</h1>
+                        <hr>
+                        <div class="total">
+                            <p>  Total you'll repay over the term</p>
+                            <h4>F539,322.94</h4>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </div>
+    
+<script src="./app.js"></script>
+</body>
+</html>

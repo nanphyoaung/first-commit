@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(202, 86%, 94%);
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+}
+.cal-con {
+  width: 100%;
+  display: flex;
+}
+.left-con {
+  width: 50%;
+}
+.right-con {
+  width: 50%;
+}
+.right{
+    width: 100%;
+    height: 100%;
+    padding:30px 20px ;
+    border-radius: 0 20px 20px 60px;
+    background-color: hsl(202, 55%, 16%);
+}
+.left {
+  width: 100%;
+  padding: 30px 20px;
+}
+.left .mort{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.left .mort .title{
+    font-size: 25px;
+    font-weight: 600;
+}
+.left .mort button{
+    font-size: 14px;
+    color:hsl(200, 26%, 54%);
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid  hsl(200, 26%, 54%);
+}
+.left form .amount{
+margin-bottom: 15px;
+color:hsl(200, 26%, 54%) ;
+}
+.left form .amount label{
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: block;
+}
+.left form .amount .input{
+  position: relative;
+  width: 100%;
+  height: 45px;
+}
+.left form .amount .input input{
+  width: 100%;
+  height: 100%;
+  padding-left: 60px;
+  border-radius: 5px;
+  outline: none;
+  border :1px solid hsl(200, 26%, 54%);
+}
+.left form .amount .input input:hover{
+  border-top:1px solid hsl(61, 70%, 52%);
+}
+.left form .amount .input input:active{
+  border:1px solid hsl(61, 70%, 52%);
+}
+
+.left form .amount .input .f{
+  position: absolute;
+  width: 45px;
+  height: 43px;
+  left: 1px;
+  bottom: 1px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+  background-color: hsl(202, 86%, 94%);
+}
+.left form .term-con{
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.left form .term-con .term{
+  width: 100%;
+}
+.left form .term-con .term label{
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+  color:hsl(200, 26%, 54%) ;
+}
+.left form .term-con .term div{
+  position: relative;
+  width: 100%;
+  height: 45px;
+}
+.left form .term-con .term div input{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid hsl(200, 24%, 40%);
+  cursor: pointer;
+  padding-left: 15px;
+}
+ 
+.left .amount .error{
+  display: none;
+}
+.left .form .amount .error{
+  display: block;
+}
+
+.left form .term-con .term div .year{
+  background-color: hsl(202, 86%, 94%);
+  width: 60px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+}
+.left form .radio-container{
+  margin-bottom: 30px;
+}
+.left form .radio-container label{
+  display: block;
+  font-size: 18px;
+  color: hsl(200, 24%, 40%);
+  margin-bottom: 5px;
+}
+.left form .radio-container .radio{
+  width: 100%;
+  height: 45px;
+  border: 1px solid hsl(200, 24%, 40%);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+.left form .radio-container .ment{
+  margin-bottom: 10px;
+}
+.left form .radio-container .radio label{
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  position: relative;
+  margin-left: 30px;
+}
+.left form .radio-container .radio:hover{
+border: 1px solid  hsl(61, 70%, 52%);
+}
+.left form .radio-container .radio input{
+  display: none;
+}
+.left form .radio-container .radio label::before{
+  content: "";
+  position: absolute;
+  left: -35px;
+  bottom: 0px;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 1px solid hsl(200, 24%, 40%);
+}
+.left form .radio-container .radio input[type="radio"]:checked + label::after{
+  content: "";
+  position: absolute;
+  left: -30px;
+  bottom: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color:hsl(61, 70%, 52%);
+}
+.left form .pay-btn{
+  width: 100%;
+  height: 45px;
+}
+.left form .pay-btn button{
+  width: 70%;
+  height: 100%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color:hsl(61, 70%, 52%) ;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.left form .pay-btn button:hover{
+  background-color:hsl(62, 41%, 67%) ;
+
+}
+.container .right-con .right .title{
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.right .your{
+  color:  hsl(203, 41%, 72%);
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.right .small-box{
+  width: 95%;
+  padding: 30px 15px;
+  background-color:rgb(28, 27, 27);
+  border-radius: 10px;
+  border-top:4px solid hsl(61, 70%, 52%) ;
+}
+.right .small-box p{
+  font-size: 18px;
+  color:  hsl(203, 41%, 72%);
+  margin-bottom: 5px;
+}
+.right .small-box h1{
+  font-size: 60px;
+  color: hsl(61, 70%, 52%);
+  margin-bottom: 20px;
+}
+hr{
+  margin-bottom: 20px;
+  background-color: lightgray;
+}
+.right .total p{
+  margin-bottom: 10px;
+}
+.right .total h4{
+  color: white;
+  font-size: 25 px;
+}
+
